@@ -81,6 +81,23 @@ datos-abiertos-mx/
 
 ---
 
+## Estado del catálogo
+
+| Sector | Fuentes documentadas |
+|--------|---------------------|
+| 🏦 Finanzas | Banxico SIE, CNBV Portafolio, SHCP Transparencia |
+| 📊 Economía | ENOE (INEGI), SAT Estadísticas, SHCP Presupuesto |
+| 🏥 Salud | SSA/DGE Epidemiología, IMSS Trabajadores Asegurados |
+| 🎓 Educación | SEP Estadísticas, MEJOREDU Indicadores |
+| 🌳 Medio ambiente | SINAICA Calidad del Aire, SEMARNAT |
+| 👥 Demografía | INEGI (BIE + Censo), CONAPO Proyecciones |
+| 🔒 Seguridad | SESNSP Incidencia Delictiva |
+| 💻 Ciencia y Tecnología | CONACYT/SECITI (ESIDET) |
+
+_Última actualización: 2026-06-12_
+
+---
+
 ## Cómo contribuir
 
 Lee [CONTRIBUTING.md](CONTRIBUTING.md) para agregar nuevas fuentes o mejorar fichas existentes.
