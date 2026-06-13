@@ -1,0 +1,30 @@
+name: Check Links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 7 * * 1"  # cada lunes a las 7am UTC
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: >
+            --verbose
+            --no-progress
+            --exclude-loopback
+            --exclude "drive.google.com"
+            --exclude "sat.gob.mx"
+            --timeout 30
+            --max-retries 3
+            "**/*.md"
+          fail: true
+          token: ${{ secrets.GITHUB_TOKEN }}
