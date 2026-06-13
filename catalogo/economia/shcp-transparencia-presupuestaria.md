@@ -52,6 +52,7 @@ from io import StringIO
 url = "https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/api"
 params = {"type": "egresos", "anio": 2024}
 r = requests.get(url, params=params, timeout=60)
+r.raise_for_status()
 r.encoding = "latin-1"
 
 df = pd.read_csv(StringIO(r.text), low_memory=False)
@@ -70,6 +71,7 @@ print(resumen.head(10))
 - La Cartera SHCP solo cubre proyectos de inversión ≥ 100 MDP; proyectos menores no aparecen
 - CSVs en encoding **Latin-1** con comas como separador de miles
 - La estructura de la API puede cambiar entre ejercicios fiscales — verificar el diccionario vigente cada año
+- Los parámetros exactos de la API (nombres de campos, valores permitidos) cambian entre ejercicios fiscales — verificar el diccionario en la URL de referencias antes de usar
 
 ## Referencias
 
