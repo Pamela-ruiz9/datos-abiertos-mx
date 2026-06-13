@@ -4,6 +4,8 @@
 
 El SIE de Banxico es la principal fuente de series macroeconómicas y financieras de México. Cubre tipo de cambio, tasas de interés, inflación, agregados monetarios, balanza de pagos, crédito bancario y estadísticas del sistema financiero. Tiene API REST bien documentada.
 
+Actualmente cuenta con más de 6,000 series estadísticas organizadas en categorías temáticas. Muchas series tienen cobertura histórica desde los años 1990, lo que las hace valiosas para análisis de largo plazo de la economía mexicana.
+
 ## ¿Qué datos tiene?
 
 | Categoría | Series destacadas |
