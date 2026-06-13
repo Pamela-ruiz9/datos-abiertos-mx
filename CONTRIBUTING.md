@@ -22,15 +22,25 @@
 - Anotar limitaciones o advertencias conocidas — eso es tan valioso como el acceso
 - No incluir credenciales, tokens o datos privados
 
-## Sectores prioritarios (a completar)
+## Sectores prioritarios
 
-- [ ] Salud — datos epidemiológicos SSA
-- [ ] Educación — estadísticas SEP / MEJOREDU
-- [ ] Medio ambiente — calidad del aire SINAICA
-- [ ] Economía — comercio exterior SE / SAT
-- [ ] Finanzas públicas — Transparencia Presupuestaria SHCP
-- [ ] Geografía — Marco Geoestadístico INEGI
-- [ ] Migración — COMAR / INM
+### Completados ✅
+- [x] Finanzas — Banxico SIE, CNBV, SHCP Transparencia
+- [x] Economía — ENOE (empleo), SAT (fiscal), SHCP (presupuesto)
+- [x] Salud — SSA/DGE datos epidemiológicos, IMSS asegurados
+- [x] Educación — SEP estadísticas, MEJOREDU indicadores
+- [x] Medio ambiente — SINAICA calidad del aire, SEMARNAT
+- [x] Demografía — INEGI BIE, CONAPO proyecciones
+- [x] Seguridad — SESNSP incidencia delictiva
+- [x] Ciencia y tecnología — CONACYT/SECITI indicadores I+D
+
+### Pendientes (contribuciones bienvenidas)
+- [ ] SE — comercio exterior (importaciones/exportaciones por producto)
+- [ ] CONEVAL — medición de pobreza multidimensional
+- [ ] INM/COMAR — datos migratorios
+- [ ] INEGI Marco Geoestadístico — polígonos AGEB y manzanas
+- [ ] IMSS SINBA — microdatos de afiliación (requiere convenio)
+- [ ] CONDUSEF — quejas del sistema financiero
 
 ## Código de conducta
 
