@@ -4,6 +4,8 @@
 
 El Portafolio de Información de la CNBV es la fuente oficial de estadísticas del sistema financiero mexicano: banca múltiple, banca de desarrollo, SoFiPOs, SoFoMs, uniones de crédito, casas de bolsa y Afores. Contiene indicadores prudenciales como ICAP (capitalización), IMOR (morosidad) y LCR (liquidez).
 
+Los datos se actualizan mensualmente con un rezago de 6-8 semanas. Es la fuente de referencia para reguladores, analistas financieros e investigadores que estudian la salud y estabilidad del sistema bancario mexicano.
+
 ## ¿Qué datos tiene?
 
 | Sector | Tablas principales |
