@@ -6,7 +6,7 @@
 
 1. **Forkea** este repositorio
 2. Crea un archivo en `catalogo/<sector>/nombre-fuente.md`
-3. Usa la plantilla de [`docs/schema.md`](../docs/schema.md)
+3. Usa la plantilla de [`docs/schema.md`](docs/schema.md)
 4. Abre un **Pull Request** con el título: `[nueva fuente] Nombre de la fuente`
 
 ## Mejorar una ficha existente

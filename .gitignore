@@ -1,0 +1,5 @@
+_mkdocs_src/
+site/
+__pycache__/
+*.pyc
+.env

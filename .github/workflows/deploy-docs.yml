@@ -1,0 +1,36 @@
+name: Deploy docs
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+
+      - run: pip install -r requirements-docs.txt
+
+      - name: Preparar fuentes para MkDocs
+        run: |
+          mkdir -p _mkdocs_src/herramientas
+          cp README.md _mkdocs_src/index.md
+          cp CONTRIBUTING.md _mkdocs_src/CONTRIBUTING.md
+          mkdir -p _mkdocs_src/docs
+          cp docs/schema.md _mkdocs_src/docs/schema.md
+          cp -r catalogo _mkdocs_src/
+          cp -r portales _mkdocs_src/
+          cp herramientas/python/README.md _mkdocs_src/herramientas/python.md
+          cp herramientas/r/README.md _mkdocs_src/herramientas/r.md
+
+      - run: mkdocs gh-deploy --force

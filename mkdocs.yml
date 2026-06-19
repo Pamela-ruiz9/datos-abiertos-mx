@@ -1,0 +1,83 @@
+site_name: Datos Abiertos MX
+site_description: Catálogo de fuentes de datos abiertos del gobierno mexicano
+site_url: https://pamela-ruiz9.github.io/datos-abiertos-mx/
+repo_url: https://github.com/Pamela-ruiz9/datos-abiertos-mx
+repo_name: Pamela-ruiz9/datos-abiertos-mx
+
+docs_dir: _mkdocs_src
+site_dir: site
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Catálogo:
+    - Finanzas:
+      - Banxico SIE: catalogo/finanzas/banxico-sie.md
+      - CNBV Portafolio: catalogo/finanzas/cnbv-portafolio.md
+    - Economía:
+      - ENOE Empleo: catalogo/economia/enoe-empleo.md
+      - SHCP Presupuesto: catalogo/economia/shcp-transparencia-presupuestaria.md
+      - SAT Estadísticas Fiscales: catalogo/economia/sat-estadisticas-fiscales.md
+    - Demografía:
+      - INEGI: catalogo/demografia/inegi.md
+      - CONAPO Proyecciones: catalogo/demografia/conapo-proyecciones.md
+    - Salud:
+      - SSA/DGE Epidemiológicos: catalogo/salud/ssa-dge-datos-epidemiologicos.md
+      - IMSS Estadísticas: catalogo/salud/imss-estadisticas.md
+    - Educación:
+      - SEP Estadísticas: catalogo/educacion/sep-estadisticas.md
+      - MEJOREDU: catalogo/educacion/mejoredu.md
+    - Seguridad:
+      - SESNSP Incidencia Delictiva: catalogo/seguridad/sesnsp-incidencia-delictiva.md
+    - Medio Ambiente:
+      - SINAICA Calidad del Aire: catalogo/medio-ambiente/sinaica-calidad-aire.md
+      - SEMARNAT: catalogo/medio-ambiente/semarnat-datos-abiertos.md
+    - Ciencia y Tecnología:
+      - CONACYT Indicadores: catalogo/ciencia-tecnologia/conacyt-indicadores-id.md
+  - Portales:
+    - Banxico: portales/banxico.md
+    - CNBV: portales/cnbv.md
+    - DataMexico: portales/datamexico.md
+    - datos.gob.mx: portales/datos-gob-mx.md
+    - INEGI: portales/inegi.md
+    - SESNSP: portales/sesnsp.md
+    - SHCP: portales/shcp.md
+  - Herramientas:
+    - Python: herramientas/python.md
+    - R: herramientas/r.md
+  - Contribuir:
+    - Guía: CONTRIBUTING.md
+    - Schema: docs/schema.md
