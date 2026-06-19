@@ -5,7 +5,7 @@ Clientes para acceder a las principales APIs de datos abiertos de México desde 
 ## Dependencias
 
 ```r
-install.packages(c("httr", "jsonlite", "tidyverse"))
+install.packages(c("httr", "jsonlite"))
 ```
 
 ## Módulos disponibles

@@ -26,8 +26,8 @@ def leer_tabla_banca_multiple(
         thousands=",",
     )
     df.columns = [
-        "_".join(str(c) for c in col if "Unnamed" not in str(c)).strip()
-        for col in df.columns
+        "_".join(str(c) for c in col if "Unnamed" not in str(c)).strip() or f"col_{i}"
+        for i, col in enumerate(df.columns)
     ]
     df.columns = [c.lower().replace(" ", "_") for c in df.columns]
     return df

@@ -32,6 +32,8 @@ def get_serie(
     Returns:
         Lista de dicts con claves "fecha" y "dato"
     """
+    if bool(desde) != bool(hasta):
+        raise ValueError("Proporciona 'desde' y 'hasta' juntos, o ninguno.")
     if desde and hasta:
         endpoint = f"{BANXICO_BASE}/series/{serie}/datos/{desde}/{hasta}"
     else:
@@ -39,7 +41,10 @@ def get_serie(
 
     r = requests.get(endpoint, headers={"Bmx-Token": token}, timeout=30)
     r.raise_for_status()
-    return r.json()["bmx"]["series"][0]["datos"]
+    body = r.json()
+    if "error" in body:
+        raise ValueError(f"Banxico API error: {body['error']}")
+    return body["bmx"]["series"][0]["datos"]
 
 
 def get_oportuno(serie: str, token: str) -> dict:
@@ -47,7 +52,10 @@ def get_oportuno(serie: str, token: str) -> dict:
     url = f"{BANXICO_BASE}/series/{serie}/datos/oportuno"
     r = requests.get(url, headers={"Bmx-Token": token}, timeout=30)
     r.raise_for_status()
-    return r.json()["bmx"]["series"][0]["datos"][0]
+    body = r.json()
+    if "error" in body:
+        raise ValueError(f"Banxico API error: {body['error']}")
+    return body["bmx"]["series"][0]["datos"][0]
 
 
 def get_multiseries(series: list[str], token: str) -> dict[str, list[dict]]:
@@ -56,9 +64,12 @@ def get_multiseries(series: list[str], token: str) -> dict[str, list[dict]]:
     url = f"{BANXICO_BASE}/series/{claves}/datos"
     r = requests.get(url, headers={"Bmx-Token": token}, timeout=30)
     r.raise_for_status()
+    body = r.json()
+    if "error" in body:
+        raise ValueError(f"Banxico API error: {body['error']}")
     return {
         s["idSerie"]: s["datos"]
-        for s in r.json()["bmx"]["series"]
+        for s in body["bmx"]["series"]
     }
 
 

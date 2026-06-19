@@ -40,7 +40,10 @@ def get_indicador(
     )
     r = requests.get(url, timeout=30)
     r.raise_for_status()
-    obs = r.json()["Series"][0]["OBSERVATIONS"]
+    body = r.json()
+    if "ERROR" in body:
+        raise ValueError(f"INEGI BIE error: {body['ERROR']}")
+    obs = body["Series"][0]["OBSERVATIONS"]
     if recientes:
         return obs[-recientes:]
     return obs

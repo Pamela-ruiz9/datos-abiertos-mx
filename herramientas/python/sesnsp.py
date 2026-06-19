@@ -21,6 +21,10 @@ def leer_incidencia(ruta: str | Path, encoding: str = "latin-1") -> pd.DataFrame
 
 def homicidios_por_estado(df: pd.DataFrame, año: int) -> pd.Series:
     """Suma de homicidios dolosos por estado para el año indicado."""
+    columnas_req = {"tipo_de_delito", "modalidad", "año", "entidad"}
+    faltantes = columnas_req - set(df.columns)
+    if faltantes:
+        raise ValueError(f"Columnas faltantes (¿encoding incorrecto?): {faltantes}")
     meses = [
         "enero", "febrero", "marzo", "abril", "mayo", "junio",
         "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",

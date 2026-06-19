@@ -39,7 +39,10 @@ params = {
 }
 r = requests.get(url, params=params, timeout=30)
 r.raise_for_status()
-df = pd.DataFrame(r.json()["data"])
+body = r.json()
+if "error" in body:
+    raise ValueError(f"Tesseract API error: {body['error']}")
+df = pd.DataFrame(body["data"])
 print(df.sort_values("Workers", ascending=False).head(10))
 ```
 
