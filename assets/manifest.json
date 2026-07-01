@@ -1,0 +1,105 @@
+{
+  "generatedFrom": "catalogo/",
+  "sectors": {
+    "economia": {
+      "label": "Economía",
+      "icon": "trending-up",
+      "color": "#f59e0b"
+    },
+    "finanzas": {
+      "label": "Finanzas",
+      "icon": "landmark",
+      "color": "#22d3ee"
+    },
+    "salud": {
+      "label": "Salud",
+      "icon": "heart-pulse",
+      "color": "#f472b6"
+    },
+    "educacion": {
+      "label": "Educación",
+      "icon": "graduation-cap",
+      "color": "#a78bfa"
+    },
+    "medio-ambiente": {
+      "label": "Medio Ambiente",
+      "icon": "leaf",
+      "color": "#34d399"
+    },
+    "seguridad": {
+      "label": "Seguridad",
+      "icon": "shield-alert",
+      "color": "#f87171"
+    },
+    "demografia": {
+      "label": "Demografía",
+      "icon": "users",
+      "color": "#60a5fa"
+    },
+    "ciencia-tecnologia": {
+      "label": "Ciencia y Tecnología",
+      "icon": "flask-conical",
+      "color": "#fbbf24"
+    }
+  },
+  "sources": [
+    {
+      "id": "demografia/inegi",
+      "title": "INEGI — Instituto Nacional de Estadística y Geografía",
+      "sector": "demografia",
+      "sectorLabel": "Demografía",
+      "institucion": "INEGI",
+      "periodicidad": "varía (mensual, trimestral, quinquenal, censal)",
+      "formato": "CSV, JSON (API INEGI), Excel, shapefile (geografía)",
+      "licencia": "uso libre con atribución",
+      "coberturaGeo": "nacional / estatal / municipal / AGEB",
+      "coberturaTemporal": "varía (algunos desde 1990)",
+      "descripcion": "INEGI es la fuente estadística más completa de México. Publica el Censo de Población, encuestas (ENOE, ENIGH, ENVIPE), cuentas nacionales, estadísticas de comercio exterior, precios al consumidor y más.",
+      "path": "catalogo/demografia/inegi.md"
+    },
+    {
+      "id": "finanzas/banxico-sie",
+      "title": "Banxico SIE — Sistema de Información Económica",
+      "sector": "finanzas",
+      "sectorLabel": "Finanzas",
+      "institucion": "Banco de México",
+      "periodicidad": "diaria / mensual / trimestral (depende de la serie)",
+      "formato": "JSON (API REST)",
+      "licencia": "uso libre con registro de token",
+      "coberturaGeo": "nacional",
+      "coberturaTemporal": "varía por serie (algunas desde 1990s)",
+      "descripcion": "El SIE de Banxico es la principal fuente de series macroeconómicas y financieras de México. Cubre tipo de cambio, tasas de interés, inflación, agregados monetarios, balanza de pagos, crédito bancario y más.",
+      "path": "catalogo/finanzas/banxico-sie.md"
+    },
+    {
+      "id": "finanzas/cnbv-portafolio",
+      "title": "CNBV — Portafolio de Información",
+      "sector": "finanzas",
+      "sectorLabel": "Finanzas",
+      "institucion": "Comisión Nacional Bancaria y de Valores",
+      "periodicidad": "mensual (con rezago ~2 meses)",
+      "formato": "CSV (descarga manual), Excel",
+      "licencia": "uso libre",
+      "coberturaGeo": "nacional",
+      "coberturaTemporal": "2000 — presente",
+      "descripcion": "El Portafolio de Información de la CNBV contiene estadísticas del sistema financiero mexicano: banca múltiple, banca de desarrollo, SoFiPOs, SoFoMs, uniones de crédito, casas de bolsa, y más.",
+      "path": "catalogo/finanzas/cnbv-portafolio.md"
+    },
+    {
+      "id": "seguridad/sesnsp-incidencia-delictiva",
+      "title": "SESNSP — Incidencia Delictiva",
+      "sector": "seguridad",
+      "sectorLabel": "Seguridad",
+      "institucion": "Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública",
+      "periodicidad": "mensual",
+      "formato": "CSV, Excel",
+      "licencia": "uso libre",
+      "coberturaGeo": "nacional / estatal / municipal",
+      "coberturaTemporal": "2015 — presente",
+      "descripcion": "El SESNSP publica estadísticas de incidencia delictiva del fuero común y federal a nivel nacional, estatal y municipal. Incluye carpetas de investigación, víctimas por tipo de delito, llamadas de emergencia al 9-1-1, y datos de feminicidios.",
+      "path": "catalogo/seguridad/sesnsp-incidencia-delictiva.md"
+    }
+  ],
+  "totalSources": 4,
+  "totalSectors": 8
+}
