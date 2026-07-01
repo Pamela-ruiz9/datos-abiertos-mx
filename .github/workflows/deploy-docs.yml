@@ -24,6 +24,7 @@ jobs:
       - name: Preparar fuentes para MkDocs
         run: |
           mkdir -p _mkdocs_src/herramientas
+          mkdir -p _mkdocs_src/assets
           cp README.md _mkdocs_src/index.md
           cp CONTRIBUTING.md _mkdocs_src/CONTRIBUTING.md
           mkdir -p _mkdocs_src/docs
@@ -32,5 +33,8 @@ jobs:
           cp -r portales _mkdocs_src/
           cp herramientas/python/README.md _mkdocs_src/herramientas/python.md
           cp herramientas/r/README.md _mkdocs_src/herramientas/r.md
+          cp overrides_src/extra.css _mkdocs_src/assets/extra.css
+          cp overrides_src/logo.svg _mkdocs_src/assets/logo.svg
+          cp overrides_src/favicon.svg _mkdocs_src/assets/favicon.svg
 
       - run: mkdocs gh-deploy --force

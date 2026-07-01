@@ -1,6 +1,16 @@
-# 📚 Diccionario de Datos Abiertos — México
+<div class="dam-hero" markdown>
+<span class="dam-emoji">📚</span>
 
-> Un mapa de qué existe, dónde está, qué contiene y cómo usarlo.
+# Diccionario de Datos Abiertos — México
+
+Un mapa de qué existe, dónde está, qué contiene y cómo usarlo.
+
+<div class="dam-stats" markdown>
+<span class="dam-pill">15 fuentes documentadas</span>
+<span class="dam-pill">8 sectores</span>
+<span class="dam-pill">actualizado 2026-06</span>
+</div>
+</div>
 
 Repositorio creado y mantenido por [Pame Ruiz](https://github.com/Pamela-ruiz9).
 
@@ -17,6 +27,21 @@ Para cada fuente documentamos:
 - Cómo acceder (URL, API, descarga)
 - Periodicidad de actualización
 - Notas de calidad / limitaciones
+
+---
+
+## Explora por sector
+
+<div class="dam-grid" markdown>
+<a class="dam-card" href="catalogo/finanzas/banxico-sie/"><span class="dam-card-emoji">🏦</span><strong>Finanzas</strong><span class="dam-card-count">Banxico, CNBV</span></a>
+<a class="dam-card" href="catalogo/economia/enoe-empleo/"><span class="dam-card-emoji">📊</span><strong>Economía</strong><span class="dam-card-count">ENOE, SAT, SHCP</span></a>
+<a class="dam-card" href="catalogo/salud/ssa-dge-datos-epidemiologicos/"><span class="dam-card-emoji">🏥</span><strong>Salud</strong><span class="dam-card-count">SSA/DGE, IMSS</span></a>
+<a class="dam-card" href="catalogo/educacion/sep-estadisticas/"><span class="dam-card-emoji">🎓</span><strong>Educación</strong><span class="dam-card-count">SEP, MEJOREDU</span></a>
+<a class="dam-card" href="catalogo/medio-ambiente/sinaica-calidad-aire/"><span class="dam-card-emoji">🌳</span><strong>Medio Ambiente</strong><span class="dam-card-count">SINAICA, SEMARNAT</span></a>
+<a class="dam-card" href="catalogo/seguridad/sesnsp-incidencia-delictiva/"><span class="dam-card-emoji">🔒</span><strong>Seguridad</strong><span class="dam-card-count">SESNSP</span></a>
+<a class="dam-card" href="catalogo/demografia/inegi/"><span class="dam-card-emoji">👥</span><strong>Demografía</strong><span class="dam-card-count">INEGI, CONAPO</span></a>
+<a class="dam-card" href="catalogo/ciencia-tecnologia/conacyt-indicadores-id/"><span class="dam-card-emoji">💻</span><strong>Ciencia y Tecnología</strong><span class="dam-card-count">CONACYT/SECITI</span></a>
+</div>
 
 ---
 

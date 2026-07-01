@@ -10,26 +10,40 @@ site_dir: site
 theme:
   name: material
   language: es
+  font:
+    text: Space Grotesk
+    code: IBM Plex Mono
+  icon:
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.svg
+  logo: assets/logo.svg
   palette:
-    - scheme: default
-      primary: green
-      accent: teal
-      toggle:
-        icon: material/brightness-7
-        name: Cambiar a modo oscuro
     - scheme: slate
-      primary: green
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Cambiar a modo claro
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.indexes
+    - navigation.footer
     - search.highlight
     - search.suggest
     - content.code.copy
+    - content.tooltips
+    - toc.follow
+
+extra_css:
+  - assets/extra.css
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -37,6 +51,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
   - tables
   - toc:
       permalink: true

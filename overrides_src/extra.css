@@ -1,0 +1,186 @@
+/* Datos Abiertos MX — estilo custom sobre Material for MkDocs */
+
+:root {
+  --dam-gold: #f5c344;
+  --dam-cyan: #22d3ee;
+  --dam-bg-dark: #0a0e14;
+  --dam-bg-dark-elev: #10151f;
+}
+
+/* Paleta custom (activada vía primary: custom / accent: custom en mkdocs.yml) */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #10151f;
+  --md-primary-fg-color--light: #161c28;
+  --md-primary-fg-color--dark: #0a0e14;
+  --md-primary-bg-color: #f5c344;
+  --md-primary-bg-color--light: #f5c344;
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: #f5c344;
+  --md-accent-fg-color--transparent: rgba(245, 195, 68, 0.1);
+  --md-accent-bg-color: #0a0e14;
+  --md-accent-bg-color--light: #0a0e14;
+}
+
+/* Fondo general en modo oscuro (slate) — más profundo y con textura sutil */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0a0e14;
+  --md-default-fg-color: #e8ecf3;
+  --md-default-fg-color--light: #8a94a8;
+  --md-default-fg-color--lighter: #5b6478;
+  --md-typeset-a-color: #22d3ee;
+  --md-code-bg-color: #10151f;
+  --md-code-fg-color: #e8ecf3;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(135deg, #10151f 0%, #0d1219 100%);
+  border-bottom: 1px solid #232b3a;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: #0d1219;
+  border-bottom: 1px solid #1a2130;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:focus,
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: var(--dam-gold);
+}
+
+/* Sidebar sutil, tarjeta look */
+[data-md-color-scheme="slate"] .md-sidebar__scrollwrap {
+  scrollbar-color: #232b3a transparent;
+}
+
+/* Títulos con fuente display + un guiño dorado en h2 */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  border-bottom: none;
+  position: relative;
+  padding-left: 14px;
+}
+.md-typeset h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  bottom: 0.15em;
+  width: 4px;
+  background: var(--dam-gold);
+  border-radius: 2px;
+}
+
+/* Tablas con estilo tipo "card" */
+.md-typeset table:not([class]) {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lighter, #1a2130);
+  box-shadow: 0 8px 24px -12px rgba(0,0,0,0.4);
+}
+.md-typeset table:not([class]) th {
+  background: rgba(245, 195, 68, 0.08);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+/* Code blocks */
+.md-typeset code {
+  border-radius: 5px;
+}
+.md-typeset pre > code {
+  border-radius: 10px;
+}
+
+/* Admonitions con acento dorado/cian */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+  border-left: 4px solid var(--dam-gold);
+}
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--dam-cyan);
+}
+
+/* Home hero (si usamos clase hero en index.md) */
+.dam-hero {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  margin: -1.5rem -1.5rem 1.5rem;
+  background: radial-gradient(circle at 50% -20%, rgba(245,195,68,0.12), transparent 60%);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.dam-hero .dam-emoji { font-size: 2.4rem; display: block; margin-bottom: 0.4rem; }
+.dam-hero h1 { margin: 0 0 0.4rem; font-size: 2rem; }
+.dam-hero p { color: var(--md-default-fg-color--light); margin: 0; font-size: 1rem; }
+
+/* Stat pills en la home */
+.dam-stats {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 0.5rem;
+}
+.dam-stats .dam-pill {
+  font-family: var(--md-code-font, monospace);
+  font-size: 0.75rem;
+  color: var(--dam-gold);
+  background: rgba(245, 195, 68, 0.12);
+  border: 1px solid rgba(245, 195, 68, 0.3);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+
+/* Grid de sectores tipo "cards" en la home */
+.dam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.9rem;
+  margin: 1.5rem 0;
+}
+.dam-card {
+  display: block;
+  padding: 1.1rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--dam-bg-dark-elev);
+  text-decoration: none !important;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.dam-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--dam-gold);
+}
+.dam-card .dam-card-emoji { font-size: 1.4rem; }
+.dam-card strong {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--md-default-fg-color) !important;
+  font-size: 0.95rem;
+}
+.dam-card span.dam-card-count {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Light scheme adjustments para que el hero/cards no se vean fuera de lugar */
+[data-md-color-scheme="default"] .dam-card {
+  background: #fafafa;
+  border-color: rgba(0,0,0,0.08);
+}
+[data-md-color-scheme="default"] .dam-hero {
+  background: radial-gradient(circle at 50% -20%, rgba(245,195,68,0.18), transparent 60%);
+}
