@@ -21,7 +21,7 @@ La DGE publica datos de vigilancia epidemiológica a nivel de caso individual (d
 
 - Portal principal: https://www.gob.mx/salud/documentos/datos-abiertos-152127
 - Descarga histórica: https://datosabiertos.salud.gob.mx/gobmx/salud/datos_abiertos/historicos/
-- Diccionario de datos: https://www.gob.mx/cms/uploads/attachment/file/600914/Descriptores_0705.pdf
+- Diccionario de datos: consultar la sección "Diccionario de datos" en https://www.gob.mx/salud/documentos/datos-abiertos-152127 (el PDF directo cambia de URL con cada actualización)
 
 ## Variables principales (COVID-19)
 
@@ -85,6 +85,6 @@ print(total.head(10))
 
 ## Referencias
 
-- Diccionario de datos: https://www.gob.mx/cms/uploads/attachment/file/600914/Descriptores_0705.pdf
+- Diccionario de datos: consultar en https://www.gob.mx/salud/documentos/datos-abiertos-152127 (el enlace directo al PDF cambia con cada actualización)
 - Portal datos abiertos salud: https://datosabiertos.salud.gob.mx
 - SINAVE: https://epidemiologia.salud.gob.mx

@@ -20,7 +20,7 @@ Los datos se actualizan mensualmente con un rezago de 6-8 semanas. Es la fuente 
 ## Cómo acceder
 
 **No hay API.** Todo es descarga manual en CSV o Excel:
-1. Ir a https://portafoliodeinformacion.cnbv.gob.mx
+1. Ir a https://portafolioinfo.cnbv.gob.mx
 2. Navegar a "Banca Múltiple" → "Boletines Estadísticos"
 3. Descargar el archivo del mes deseado (formato `BM_V.csv`, etc.)
 

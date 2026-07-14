@@ -26,7 +26,7 @@ url = "https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/api"
 r = requests.get(url, params={"type": "egresos", "anio": 2024}, timeout=60)
 ```
 
-Diccionario de parámetros: https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/api/diccionario
+Diccionario de parámetros: https://www.transparenciapresupuestaria.gob.mx/es/PTP/Datos_Abiertos
 
 ## Tip de navegación
 

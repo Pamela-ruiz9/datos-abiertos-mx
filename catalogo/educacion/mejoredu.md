@@ -19,9 +19,9 @@ MEJOREDU publica los Indicadores Nacionales de la Mejora Continua de la Educaci�
 
 ## URL de acceso
 
-- Portal de indicadores: https://www.mejoredu.gob.mx/indicadores
-- Publicaciones e informes: https://www.mejoredu.gob.mx/publicaciones/informe-de-resultados
-- datos.gob.mx MEJOREDU: https://datos.gob.mx/busca/organization/mejoredu
+- Portal de indicadores: https://www.gob.mx/mejoredu
+- Publicaciones e informes: https://www.gob.mx/mejoredu
+- datos.gob.mx MEJOREDU: https://www.datos.gob.mx/organization/ (buscar "MEJOREDU")
 
 ## Variables principales
 
@@ -59,6 +59,6 @@ print(df[["Entidad", "logro_matematicas"]].sort_values("logro_matematicas", asce
 
 ## Referencias
 
-- Indicadores nacionales: https://www.mejoredu.gob.mx/indicadores
-- INEE (datos históricos 2013-2019): https://www.inee.edu.mx/evaluaciones/
+- Indicadores nacionales: https://www.gob.mx/mejoredu
+- INEE (datos históricos 2013-2019): el sitio inee.edu.mx fue dado de baja tras la fusión con MEJOREDU (2019) — acervo histórico disponible en https://proyectoeducativo.org/acervo-inee/
 - SEP estadísticas de volumen: https://www.planeacion.sep.gob.mx/estadisticaeindicadores.aspx

@@ -67,5 +67,5 @@ print(df[["Periodo", "Total_Tributarios", "pct_ISR"]].tail(12))
 
 ## Referencias
 
-- Ingresos del sector público: https://www.shcp.gob.mx/POLITICAFINANCIERA/FINANZASPUBLICAS/Estadisticas_Oportunas_Finanzas_Publicas/Paginas/unica2.aspx
-- Ley de Ingresos de la Federación vigente: https://www.diputados.gob.mx/LeyesBiblio/abro/lif/
+- Ingresos del sector público: https://www.hacienda.gob.mx/POLITICAFINANCIERA/FINANZASPUBLICAS/Estadisticas_Oportunas_Finanzas_Publicas/Paginas/unica2.aspx
+- Ley de Ingresos de la Federación vigente: https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf

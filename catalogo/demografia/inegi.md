@@ -77,6 +77,5 @@ for o in obs[-5:]:
 
 ## Referencias
 
-- Catálogo de indicadores BIE: https://www.inegi.org.mx/app/api/indicadores/indiname/
+- Catálogo de indicadores BIE: https://www.inegi.org.mx/app/indicadores/
 - Metodología ENOE: https://www.inegi.org.mx/programas/enoe/15ymas/
-- GitHub INEGI (algunas herramientas): https://github.com/INEGI-DCSIE

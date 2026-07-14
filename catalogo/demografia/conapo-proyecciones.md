@@ -21,7 +21,7 @@ CONAPO publica proyecciones demográficas de México con horizonte hasta 2070. L
 
 - Portal CONAPO: https://www.gob.mx/conapo
 - Proyecciones 2020-2070: https://www.gob.mx/conapo/acciones-y-programas/conciliacion-demografica-de-mexico-1950-a-2019-y-proyecciones-de-la-poblacion-de-mexico-y-de-las-entidades-federativas-2020-a-2070-226173
-- datos.gob.mx CONAPO: https://datos.gob.mx/busca/organization/conapo
+- datos.gob.mx CONAPO: https://www.datos.gob.mx/organization/conapo
 
 ## Variables principales
 
@@ -65,4 +65,4 @@ print(pivot.tail(20))
 
 - Metodología de proyecciones: https://www.gob.mx/conapo/acciones-y-programas/conciliacion-demografica-2020-2070
 - Censo de Población 2020 (base): https://www.inegi.org.mx/programas/ccpv/2020/
-- CONAPO indicadores demográficos: https://datos.gob.mx/busca/dataset/indicadores-demograficos-de-mexico
+- CONAPO indicadores demográficos: https://www.datos.gob.mx/dataset/ (buscar "indicadores demográficos")

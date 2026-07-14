@@ -74,4 +74,4 @@ for o in r.json()["Series"][0]["OBSERVATIONS"][-8:]:
 
 - Metodología ENOE: https://www.inegi.org.mx/programas/enoe/15ymas/
 - Nota ENOE Nueva Edición: https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/nota_nueva_enoe.pdf
-- Catálogo indicadores BIE: https://www.inegi.org.mx/app/api/indicadores/indiname/
+- Catálogo indicadores BIE: https://www.inegi.org.mx/app/indicadores/

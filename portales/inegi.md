@@ -33,7 +33,7 @@ A diferencia de otros portales del gobierno mexicano, el INEGI tiene una **API R
 
 ## Tip de navegación
 
-Para encontrar el ID de un indicador BIE: usar el buscador en https://www.inegi.org.mx/app/api/indicadores/indiname/
+Para encontrar el ID de un indicador BIE: usar el buscador en https://www.inegi.org.mx/app/indicadores/
 
 ## Limitaciones
 

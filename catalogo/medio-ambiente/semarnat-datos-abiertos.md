@@ -20,7 +20,7 @@ SEMARNAT publica datasets ambientales en datos.gob.mx: residuos sólidos, descar
 ## URL de acceso
 
 - Portal datos abiertos: https://www.gob.mx/semarnat/documentos/datos-abiertos
-- datos.gob.mx SEMARNAT: https://datos.gob.mx/busca/organization/semarnat
+- datos.gob.mx SEMARNAT: https://www.datos.gob.mx/organization/ (buscar "SEMARNAT")
 - CONABIO (biodiversidad): https://www.conabio.gob.mx/informacion/gis/
 - CONAGUA (agua): https://www.conagua.gob.mx/CONAGUA07/Contenido/Documentos/SINA/
 

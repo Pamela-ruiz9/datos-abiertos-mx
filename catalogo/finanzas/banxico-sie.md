@@ -23,7 +23,7 @@ Requiere token gratuito: https://www.banxico.org.mx/SieAPIRest/service/v1/token
 
 - Portal: https://www.banxico.org.mx/SieAPIRest/
 - API base: `https://www.banxico.org.mx/SieAPIRest/service/v1/series/{serie}/datos`
-- Catálogo de series: https://www.banxico.org.mx/SieAPIRest/service/v1/doc/catalogoSeries
+- Catálogo de series: https://www.banxico.org.mx/SieAPIRest/service/v1/doc/consultaSeries
 
 ## Series más usadas
 
@@ -66,5 +66,5 @@ print(f"{obs['fecha']}: {obs['dato']} MXN/USD")
 
 ## Referencias
 
-- Documentación API: https://www.banxico.org.mx/SieAPIRest/service/v1/doc/
-- Catálogo completo de series: https://www.banxico.org.mx/SieAPIRest/service/v1/doc/catalogoSeries
+- Documentación API: https://www.banxico.org.mx/SieAPIRest/service/v1/doc/consultaSeries
+- Catálogo completo de series: https://www.banxico.org.mx/SieAPIRest/service/v1/doc/consultaSeries

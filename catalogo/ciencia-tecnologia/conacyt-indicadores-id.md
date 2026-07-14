@@ -21,7 +21,7 @@ Los indicadores de ciencia y tecnología de México se publican principalmente a
 
 - INEGI ESIDET: https://www.inegi.org.mx/programas/esidet/
 - CONAHCYT indicadores: https://conahcyt.mx/
-- datos.gob.mx ciencia: https://datos.gob.mx/busca/dataset/indicadores-sobre-actividades-de-ciencia-y-tecnologia
+- datos.gob.mx ciencia: https://www.datos.gob.mx/dataset/ (buscar "ciencia y tecnología")
 - OCDE estadísticas México: https://www.oecd.org/sti/msti2023.htm
 
 ## Variables principales
@@ -64,4 +64,4 @@ print(gide_pib)
 - Metodología ESIDET: https://www.inegi.org.mx/programas/esidet/
 - Informe general CONAHCYT: https://conahcyt.mx/
 - OCDE MSTI (comparativa internacional): https://www.oecd.org/sti/msti2023.htm
-- IMPI (patentes): https://www.impi.gob.mx/estadisticas
+- IMPI (patentes): https://datosabiertos.impi.gob.mx/Paginas/Inicio.aspx
