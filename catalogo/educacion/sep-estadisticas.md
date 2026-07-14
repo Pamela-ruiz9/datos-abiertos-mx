@@ -21,7 +21,7 @@ La SEP publica anualmente el Formato 911 con estadísticas completas del sistema
 
 - Portal estadísticas SEP: https://www.planeacion.sep.gob.mx/estadisticaeindicadores.aspx
 - Principales Cifras (descarga): https://www.planeacion.sep.gob.mx/principalescifras/
-- datos.gob.mx SEP: https://datos.gob.mx/busca/organization/sep
+- datos.gob.mx SEP: https://www.datos.gob.mx/organization/ (buscar "SEP")
 
 ## Variables principales
 
@@ -64,4 +64,4 @@ print(df_pub.groupby("Entidad")["Alumnos"].sum().sort_values(ascending=False))
 ## Referencias
 
 - Metodología Formato 911: https://www.planeacion.sep.gob.mx/estadisticaeindicadores.aspx
-- MEJOREDU (indicadores de calidad): https://www.mejoredu.gob.mx/indicadores
+- MEJOREDU (indicadores de calidad): https://www.gob.mx/mejoredu

@@ -22,9 +22,8 @@ Permite analizar la composición y evolución del gasto público, monitorear pro
 ## URL de acceso
 
 - Portal: https://www.transparenciapresupuestaria.gob.mx
-- API Open Data: https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/api
-- Descarga PEF (CSV/XLS): https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/descargaInfo
-- Cartera de inversión: https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/API/cartera
+- Datos abiertos (descarga CSV/XLS): https://www.transparenciapresupuestaria.gob.mx/es/PTP/Datos_Abiertos
+- La API REST cambia de rutas entre ejercicios fiscales — verificar la documentación vigente en el portal antes de integrar
 
 ## Variables principales
 
@@ -43,13 +42,14 @@ Permite analizar la composición y evolución del gasto público, monitorear pro
 ## Ejemplo de uso (Python)
 
 ```python
+# NOTA: la API REST de Transparencia Presupuestaria cambia de rutas
+# entre ejercicios fiscales. Antes de usar este ejemplo, verificar los
+# endpoints vigentes en https://www.transparenciapresupuestaria.gob.mx/es/PTP/Datos_Abiertos
 import requests
 import pandas as pd
 from io import StringIO
 
-# Descarga del PEF ejercido (CSV dinámico)
-# Verificar parámetros actualizados en la documentación de la API
-url = "https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/api"
+url = "https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/api"  # verificar ruta vigente
 params = {"type": "egresos", "anio": 2024}
 r = requests.get(url, params=params, timeout=60)
 r.raise_for_status()
@@ -75,6 +75,6 @@ print(resumen.head(10))
 
 ## Referencias
 
-- Diccionario de datos API: https://www.transparenciapresupuestaria.gob.mx/ptp/contenido/api/diccionario
-- Ley de Presupuesto y Responsabilidad Hacendaria: https://www.diputados.gob.mx/LeyesBiblio/pdf/LPRH.pdf
-- Cuenta Pública (cierre anual): https://www.transparenciapresupuestaria.gob.mx/es/PTP/cp
+- Datos abiertos y diccionario de datos: https://www.transparenciapresupuestaria.gob.mx/es/PTP/Datos_Abiertos
+- Ley de Presupuesto y Responsabilidad Hacendaria: https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPRH.pdf
+- Cuenta Pública (cierre anual): https://www.transparenciapresupuestaria.gob.mx

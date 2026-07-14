@@ -27,7 +27,7 @@ Requiere **token gratuito**:
 
 **Límite:** 10,000 consultas/día por token.
 
-**Catálogo de series:** https://www.banxico.org.mx/SieAPIRest/service/v1/doc/catalogoSeries
+**Catálogo de series:** https://www.banxico.org.mx/SieAPIRest/service/v1/doc/consultaSeries
 
 ## Tip de navegación
 

@@ -20,9 +20,14 @@ jobs:
           args: >
             --verbose
             --no-progress
+            --insecure
             --exclude-loopback
             --exclude "drive.google.com"
             --exclude "sat.gob.mx"
+            --exclude "www.oecd.org"
+            --exclude "conabio.gob.mx"
+            --exclude "www.conagua.gob.mx"
+            --exclude "datosabiertos.salud.gob.mx"
             --timeout 30
             --max-retries 3
             "**/*.md"

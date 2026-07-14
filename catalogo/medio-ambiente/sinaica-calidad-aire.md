@@ -20,8 +20,8 @@ SINAICA agrega datos de las redes de monitoreo de calidad del aire de todo Méxi
 ## URL de acceso
 
 - Portal principal: https://sinaica.inecc.gob.mx/
-- Consulta de datos por estación: https://sinaica.inecc.gob.mx/pags/datos.php
-- Catálogo de estaciones: https://sinaica.inecc.gob.mx/pags/estaciones.php
+- Consulta de datos por estación: https://sinaica.inecc.gob.mx/
+- Catálogo de estaciones: https://sinaica.inecc.gob.mx/
 
 ## Variables principales
 

@@ -33,14 +33,14 @@ Para cada fuente documentamos:
 ## Explora por sector
 
 <div class="dam-grid" markdown>
-<a class="dam-card" href="catalogo/finanzas/banxico-sie/"><span class="dam-card-emoji">🏦</span><strong>Finanzas</strong><span class="dam-card-count">Banxico, CNBV</span></a>
-<a class="dam-card" href="catalogo/economia/enoe-empleo/"><span class="dam-card-emoji">📊</span><strong>Economía</strong><span class="dam-card-count">ENOE, SAT, SHCP</span></a>
-<a class="dam-card" href="catalogo/salud/ssa-dge-datos-epidemiologicos/"><span class="dam-card-emoji">🏥</span><strong>Salud</strong><span class="dam-card-count">SSA/DGE, IMSS</span></a>
-<a class="dam-card" href="catalogo/educacion/sep-estadisticas/"><span class="dam-card-emoji">🎓</span><strong>Educación</strong><span class="dam-card-count">SEP, MEJOREDU</span></a>
-<a class="dam-card" href="catalogo/medio-ambiente/sinaica-calidad-aire/"><span class="dam-card-emoji">🌳</span><strong>Medio Ambiente</strong><span class="dam-card-count">SINAICA, SEMARNAT</span></a>
-<a class="dam-card" href="catalogo/seguridad/sesnsp-incidencia-delictiva/"><span class="dam-card-emoji">🔒</span><strong>Seguridad</strong><span class="dam-card-count">SESNSP</span></a>
-<a class="dam-card" href="catalogo/demografia/inegi/"><span class="dam-card-emoji">👥</span><strong>Demografía</strong><span class="dam-card-count">INEGI, CONAPO</span></a>
-<a class="dam-card" href="catalogo/ciencia-tecnologia/conacyt-indicadores-id/"><span class="dam-card-emoji">💻</span><strong>Ciencia y Tecnología</strong><span class="dam-card-count">CONACYT/SECITI</span></a>
+<a class="dam-card" href="catalogo/finanzas/banxico-sie.md"><span class="dam-card-emoji">🏦</span><strong>Finanzas</strong><span class="dam-card-count">Banxico, CNBV</span></a>
+<a class="dam-card" href="catalogo/economia/enoe-empleo.md"><span class="dam-card-emoji">📊</span><strong>Economía</strong><span class="dam-card-count">ENOE, SAT, SHCP</span></a>
+<a class="dam-card" href="catalogo/salud/ssa-dge-datos-epidemiologicos.md"><span class="dam-card-emoji">🏥</span><strong>Salud</strong><span class="dam-card-count">SSA/DGE, IMSS</span></a>
+<a class="dam-card" href="catalogo/educacion/sep-estadisticas.md"><span class="dam-card-emoji">🎓</span><strong>Educación</strong><span class="dam-card-count">SEP, MEJOREDU</span></a>
+<a class="dam-card" href="catalogo/medio-ambiente/sinaica-calidad-aire.md"><span class="dam-card-emoji">🌳</span><strong>Medio Ambiente</strong><span class="dam-card-count">SINAICA, SEMARNAT</span></a>
+<a class="dam-card" href="catalogo/seguridad/sesnsp-incidencia-delictiva.md"><span class="dam-card-emoji">🔒</span><strong>Seguridad</strong><span class="dam-card-count">SESNSP</span></a>
+<a class="dam-card" href="catalogo/demografia/inegi.md"><span class="dam-card-emoji">👥</span><strong>Demografía</strong><span class="dam-card-count">INEGI, CONAPO</span></a>
+<a class="dam-card" href="catalogo/ciencia-tecnologia/conacyt-indicadores-id.md"><span class="dam-card-emoji">💻</span><strong>Ciencia y Tecnología</strong><span class="dam-card-count">CONACYT/SECITI</span></a>
 </div>
 
 ---
@@ -81,7 +81,7 @@ datos-abiertos-mx/
 | datos.gob.mx | Gobierno Federal | https://datos.gob.mx |
 | INEGI | Instituto Nacional de Estadística | https://www.inegi.org.mx/datos/ |
 | Banxico SIE | Banco de México | https://www.banxico.org.mx/SieAPIRest/ |
-| CNBV | Comisión Nacional Bancaria y de Valores | https://portafoliodeinformacion.cnbv.gob.mx |
+| CNBV | Comisión Nacional Bancaria y de Valores | https://portafolioinfo.cnbv.gob.mx |
 | SSA / DGE | Secretaría de Salud | https://www.gob.mx/salud/documentos/datos-abiertos-152127 |
 | SEP | Secretaría de Educación Pública | https://www.planeacion.sep.gob.mx/estadisticaeindicadores.aspx |
 | SEMARNAT | Medio ambiente | https://www.gob.mx/semarnat/documentos/datos-abiertos |

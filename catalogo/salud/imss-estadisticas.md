@@ -19,9 +19,9 @@ El IMSS publica mensualmente el número de trabajadores asegurados desagregado p
 
 ## URL de acceso
 
-- Portal estadísticas IMSS: https://www.imss.gob.mx/estadisticas
-- Dataset trabajadores asegurados (datos.gob.mx): https://datos.gob.mx/busca/dataset/trabajadores-asegurados-al-imss
-- Memoria estadística: https://www.imss.gob.mx/conoce-al-imss/memoria-estadistica
+- Portal estadísticas IMSS: https://www.imss.gob.mx/conoce-al-imss/informes-estadisticas
+- Dataset trabajadores asegurados (datos.gob.mx): https://www.datos.gob.mx/dataset/ (buscar "asegurados IMSS")
+- Memoria estadística: https://www.imss.gob.mx/conoce-al-imss/informes-estadisticas
 
 ## Variables principales
 
@@ -42,7 +42,7 @@ El IMSS publica mensualmente el número de trabajadores asegurados desagregado p
 import pandas as pd
 
 # Patrón de URL de archivos IMSS en datos.gob.mx
-# Verificar URL actualizada en https://datos.gob.mx/busca/dataset/trabajadores-asegurados-al-imss
+# Verificar URL actualizada en https://www.datos.gob.mx/dataset/ (buscar "asegurados IMSS")
 url = "https://datos.imss.gob.mx/sites/default/files/asg-2024-03-01.csv"
 
 df = pd.read_csv(url, encoding="latin-1")
@@ -61,5 +61,5 @@ print(nacional.tail(12))
 
 ## Referencias
 
-- Metodología: https://www.imss.gob.mx/estadisticas
+- Metodología: https://www.imss.gob.mx/conoce-al-imss/informes-estadisticas
 - ENOE para empleo total: https://www.inegi.org.mx/programas/enoe/15ymas/

@@ -21,9 +21,9 @@ Es la fuente oficial para indicadores prudenciales: ICAP, LCR, IMOR, NSFR, y est
 
 ## URL de acceso
 
-- Portal: https://portafoliodeinformacion.cnbv.gob.mx
-- Banca múltiple: https://portafoliodeinformacion.cnbv.gob.mx/bm1/Paginas/boletines.aspx
-- SoFiPOs: https://portafoliodeinformacion.cnbv.gob.mx/eacp1/Paginas/sofipo.aspx
+- Portal: https://portafolioinfo.cnbv.gob.mx
+- Banca múltiple: https://portafolioinfo.cnbv.gob.mx/PUBLICACIONES/Boletines/Paginas/default.aspx
+- SoFiPOs: https://portafolioinfo.cnbv.gob.mx/PUBLICACIONES/Boletines/Paginas/SOFIPOS.aspx
 
 ## Tablas principales (Banca Múltiple)
 
@@ -68,5 +68,5 @@ df.columns = ["_".join([c for c in col if "Unnamed" not in str(c)]).strip()
 
 ## Referencias
 
-- Metodología CNBV: https://portafoliodeinformacion.cnbv.gob.mx/bm1/Paginas/metodologia.aspx
-- Glosario de términos: https://portafoliodeinformacion.cnbv.gob.mx/Paginas/glosario.aspx
+- Metodología CNBV: https://portafolioinfo.cnbv.gob.mx
+- Glosario de términos: https://portafolioinfo.cnbv.gob.mx/Paginas/glosario.aspx
